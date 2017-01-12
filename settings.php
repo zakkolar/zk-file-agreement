@@ -191,9 +191,16 @@ function zk_file_agreement_options_page_html()
             // output setting sections and their fields
             // (sections are registered for "zk_file_agreement", each field is registered to a specific section)
             do_settings_sections('zk_file_agreement');
+
             // output save settings button
             submit_button('Save Settings');
             ?>
+            <div>
+            <p>To embed a table of files on a page, use the following shortcode:</p>
+            <pre>
+[file_agreement_download category="(category name)" table_class="(css class for table)"]
+            </pre>
+            </div>
         </form>
     </div>
     <?php
